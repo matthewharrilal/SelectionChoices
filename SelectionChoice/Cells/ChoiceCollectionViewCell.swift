@@ -45,9 +45,19 @@ class ChoiceCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func onHandleSelectionChoice(didSelect: Bool) {
+    func onHandleSelectionChoice(didSelect: Bool, reachedMaxSelection: Bool = false) {
+        
+        if reachedMaxSelection {
+            containerView.transform = CGAffineTransform(rotationAngle: 0.05).scaledBy(x: 1.25, y: 1.25)
+        }
+
         UIView.animate(withDuration: 0.25) { [weak self] in
-            self?.containerView.backgroundColor = didSelect ? .green : .red
+            guard let self = self else { return }
+            self.containerView.backgroundColor = didSelect ? .green : .red
+            
+            if reachedMaxSelection {
+                self.containerView.transform = .identity
+            }
         }
     }
 }

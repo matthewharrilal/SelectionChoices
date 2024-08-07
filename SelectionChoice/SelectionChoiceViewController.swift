@@ -72,6 +72,7 @@ extension SelectionChoiceViewController: UICollectionViewDelegate {
             selectedSet.insert(indexPath)
         } else {
             print("Too many options selected")
+            cell.onHandleSelectionChoice(didSelect: false, reachedMaxSelection: true)
             return
         }
 
