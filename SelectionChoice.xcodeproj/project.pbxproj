@@ -18,6 +18,7 @@
 		7660D0662C62979700D09D0D /* SelectionChoiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660D0652C62979700D09D0D /* SelectionChoiceUITestsLaunchTests.swift */; };
 		7660D0742C62985F00D09D0D /* ChoiceCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660D0732C62985F00D09D0D /* ChoiceCollectionViewLayout.swift */; };
 		7660D0772C629C8600D09D0D /* ChoiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660D0762C629C8600D09D0D /* ChoiceCollectionViewCell.swift */; };
+		7660D07A2C634BA000D09D0D /* ScalableContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7660D0792C634BA000D09D0D /* ScalableContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7660D0652C62979700D09D0D /* SelectionChoiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionChoiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7660D0732C62985F00D09D0D /* ChoiceCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCollectionViewLayout.swift; sourceTree = "<group>"; };
 		7660D0762C629C8600D09D0D /* ChoiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		7660D0792C634BA000D09D0D /* ScalableContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalableContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		7660D0412C62979500D09D0D /* SelectionChoice */ = {
 			isa = PBXGroup;
 			children = (
+				7660D0782C634B7800D09D0D /* Helpers */,
 				7660D0752C629C7A00D09D0D /* Cells */,
 				7660D0722C62985500D09D0D /* Layouts */,
 				7660D0422C62979500D09D0D /* AppDelegate.swift */,
@@ -147,6 +150,14 @@
 				7660D0762C629C8600D09D0D /* ChoiceCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		7660D0782C634B7800D09D0D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7660D0792C634BA000D09D0D /* ScalableContainerView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7660D0472C62979500D09D0D /* SelectionChoiceViewController.swift in Sources */,
+				7660D07A2C634BA000D09D0D /* ScalableContainerView.swift in Sources */,
 				7660D0432C62979500D09D0D /* AppDelegate.swift in Sources */,
 				7660D0742C62985F00D09D0D /* ChoiceCollectionViewLayout.swift in Sources */,
 				7660D0772C629C8600D09D0D /* ChoiceCollectionViewCell.swift in Sources */,

@@ -18,8 +18,8 @@ class ChoiceCollectionViewCell: UICollectionViewCell {
         String(describing: ChoiceCollectionViewCell.self)
     }
     
-    private var containerView: UIView = {
-        let view = UIView()
+    private var containerView: ScalableContainerView = {
+        let view = ScalableContainerView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .red
         view.layer.cornerRadius = 18
