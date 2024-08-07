@@ -63,6 +63,8 @@ extension SelectionChoiceViewController: UICollectionViewDataSource {
 extension SelectionChoiceViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ChoiceCollectionViewCell else { return }
        
         if selectedSet.contains(indexPath) {
             selectedSet.remove(indexPath)
@@ -74,5 +76,6 @@ extension SelectionChoiceViewController: UICollectionViewDelegate {
         }
 
         print("Index path \(indexPath) current selection status \(selectedSet.contains(indexPath))")
+        cell.onHandleSelectionChoice(didSelect: selectedSet.contains(indexPath))
     }
 }
